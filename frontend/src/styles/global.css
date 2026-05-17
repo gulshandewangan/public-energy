@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color: #e5f3ee;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    @apply min-h-screen bg-slate-950 text-slate-100;
+    margin: 0;
+    background-image:
+      radial-gradient(circle at top, rgba(20, 184, 166, 0.14), transparent 28%),
+      radial-gradient(circle at bottom right, rgba(96, 165, 250, 0.12), transparent 22%);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
